@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Chapter_1_Dialogue_0_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - Take a seat lady
-  - Thank you
-  - I would be suprised if he gave me a place. How nice it would be a woman
+  - 'Gentleman: Take a seat lady'
+  - 'Lady: Thank you'
+  - 'Sam: I would be suprised if he gave me a place. How nice it would be a woman'

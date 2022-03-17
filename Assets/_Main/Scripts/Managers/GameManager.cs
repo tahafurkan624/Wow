@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator FadeOutCO()
     {
+        Debug.Log("Fade Out");
         float elapsedTime = 0f;
         while (elapsedTime < 2f)
         {

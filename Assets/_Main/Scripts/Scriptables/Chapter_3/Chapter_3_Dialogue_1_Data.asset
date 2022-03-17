@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chapter_3_Dialogue_1_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - Did his hand just touch me?
+  - 'Sam: Did his hand just touch me?'

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Chapter_3_Dialogue_0_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - Take a seat madame
-  - Thanks
-  - Fianlly i can go work comfortably
+  - 'Gentleman: Take a seat madame'
+  - 'Sam: Thanks'
+  - 'Sam: Finally I can go to work comfortably'

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chapter_4_Dialogue_2_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - You got some, It's obvious
+  - 'Bob: You got some, It''s obvious'

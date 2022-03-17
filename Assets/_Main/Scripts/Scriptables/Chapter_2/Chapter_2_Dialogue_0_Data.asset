@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chapter_2_Dialogue_0_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - Uyumaya gitsem iyi olucak...
+  - 'Sam: I should get some sleep.'

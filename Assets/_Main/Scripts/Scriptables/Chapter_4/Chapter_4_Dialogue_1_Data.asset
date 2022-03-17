@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Chapter_4_Dialogue_1_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - Hi
-  - Hey, did you gain some weight?
+  - 'Sam: Hi'
+  - 'Eric: Hey, did you gain some weight?'

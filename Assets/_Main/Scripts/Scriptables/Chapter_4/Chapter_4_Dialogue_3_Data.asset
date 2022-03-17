@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chapter_4_Dialogue_3_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - How come this happened!
+  - 'Sam: How come this happened!'

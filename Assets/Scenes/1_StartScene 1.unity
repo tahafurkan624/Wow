@@ -380,6 +380,9 @@ MonoBehaviour:
   endEvent3:
     m_PersistentCalls:
       m_Calls: []
+  endEvent4:
+    m_PersistentCalls:
+      m_Calls: []
   dialogueTmp: {fileID: 194602565}
   panelGo: {fileID: 1871276832}
   _dialogueDatas:
@@ -522,8 +525,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: None
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e9755019971960e49bda02ba1a73bbf3, type: 2}
+  m_sharedMaterial: {fileID: -8979030905801541929, guid: e9755019971960e49bda02ba1a73bbf3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2836,6 +2839,7 @@ MonoBehaviour:
   currentChapter: 0
   _startMoveTrans: {fileID: 1422045493}
   Image: {fileID: 137285953}
+  manOutline: {fileID: 0}
   WickedNpc: {fileID: 0}
   DecisionUI: {fileID: 0}
   DecisionUI2: {fileID: 0}
@@ -2871,6 +2875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &1584244390
 Camera:
   m_ObjectHideFlags: 0

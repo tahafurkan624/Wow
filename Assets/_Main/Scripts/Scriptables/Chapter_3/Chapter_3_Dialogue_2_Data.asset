@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chapter_3_Dialogue_2_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - Can you set back a little
+  - 'Sam: Can you set back a little'

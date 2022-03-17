@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chapter_2_Dialogue_1_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - "Sen beni bu esaretten kurtard\u0131n, dile Benden ne dilersen"
+  - 'Geine: You rescued me from this slavery, say whatever you wish from me.'

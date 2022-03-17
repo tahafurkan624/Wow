@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Chapter_4_Dialogue_0_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - It looks like my boss did not deposit all of my money
-  - I should talk to him
-  - But before I should talk to Eric
+  - 'Sam: It looks like my boss did not deposit all of my money'
+  - 'Sam: I should talk to him'
+  - 'Sam: But before I should talk to Eric'

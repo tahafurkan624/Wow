@@ -416,6 +416,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  endEvent4:
+    m_PersistentCalls:
+      m_Calls: []
   dialogueTmp: {fileID: 194602565}
   panelGo: {fileID: 1871276832}
   _dialogueDatas:
@@ -561,8 +564,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: None
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e9755019971960e49bda02ba1a73bbf3, type: 2}
+  m_sharedMaterial: {fileID: -8979030905801541929, guid: e9755019971960e49bda02ba1a73bbf3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2678,6 +2681,7 @@ MonoBehaviour:
   currentChapter: 2
   _startMoveTrans: {fileID: 1422045493}
   Image: {fileID: 137285953}
+  manOutline: {fileID: 0}
   WickedNpc: {fileID: 0}
   DecisionUI: {fileID: 8810105252348838820}
   DecisionUI2: {fileID: 0}
