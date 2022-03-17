@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{db87ec3c-ead5-460c-b479-f8a9bf672fb9}">
+		<property name="assetPath">
+			<value>H Thunder 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{daa6a135-67b2-49f9-8552-b5fc1309ff20}</destination>
+		</relationship>
+	</object>
+</objects>
