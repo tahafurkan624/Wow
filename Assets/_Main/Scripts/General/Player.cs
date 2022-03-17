@@ -25,8 +25,13 @@ public class Player : MonoBehaviour
         if(_animatorM.enabled)_animatorM.SetFloat("Speed", _agent.velocity.magnitude);
     }
 
+    public void Cry()
+    {
+        _animatorF.SetTrigger("Cry");
+    }
+
     public void MoveToPoint(Vector3 position)
     {
-        _agent.SetDestination(position);
+        if(_agent.enabled) _agent.SetDestination(position);
     }
 }

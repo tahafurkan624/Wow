@@ -11,7 +11,7 @@ public class DialogueSystem : MonoBehaviour
 
     public bool isDialogueOpen;
 
-    public UnityEvent endEvent, endEvent1, endEvent2, endEvent3;
+    public UnityEvent endEvent, endEvent1, endEvent2, endEvent3, endEvent4;
 
     private void Awake()
     {
@@ -34,6 +34,11 @@ public class DialogueSystem : MonoBehaviour
         {
             if(isDialogueOpen) GetChapterText();
         }
+    }
+
+    public void StartDialogue()
+    {
+        isDialogueOpen = true;
     }
 
     [ContextMenu("SetText")]
@@ -75,6 +80,9 @@ public class DialogueSystem : MonoBehaviour
                     break;
                 case 3:
                     endEvent3.Invoke();
+                    break;
+                case 4:
+                    endEvent4.Invoke();
                     break;
             }
 

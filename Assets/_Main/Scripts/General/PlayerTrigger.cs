@@ -42,7 +42,8 @@ public class PlayerTrigger : MonoBehaviour
                 case 3:
                     break;
                 case 4:
-                    StartCoroutine(MoneySequence());
+                    OfficePlayerTrigger();
+                    OfficeSit(player);
                     break;
                 case 5:
                     break;
@@ -50,10 +51,20 @@ public class PlayerTrigger : MonoBehaviour
         }
     }
 
-    private IEnumerator MoneySequence()
+    private void OfficeSit(Player player)
     {
-        yield return new WaitForSeconds(2f);
-        
+        player.canMove = false;
+        player.AnimatorF.SetTrigger("Sit");
+        player.Agent.enabled = false;
+        player.AnimatorF.SetFloat("Speed", 1f);
+        player.transform.DOMove(sitTrans.position, 1f).SetEase(Ease.OutQuad);
+        player.transform.DORotate(sitTrans.rotation.eulerAngles, .6f);
+    }
+
+    private void OfficePlayerTrigger()
+    {
+        DialogueSystem.instance.GetChapterText();
+        DialogueSystem.instance.isDialogueOpen = true;
     }
 
     private IEnumerator WindowHitSequence()

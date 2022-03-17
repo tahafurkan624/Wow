@@ -16,7 +16,7 @@ public class InputManager : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
-            if(_player.canMove) TryToInteract();
+             TryToInteract();
         }
     }
 
@@ -32,7 +32,7 @@ public class InputManager : MonoBehaviour
             }
             else
             {
-                MoveToPos(hit.point);
+                if(_player.canMove) MoveToPos(hit.point);
             }
         }
     }

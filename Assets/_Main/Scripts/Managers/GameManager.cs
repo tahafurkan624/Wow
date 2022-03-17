@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private Player _player;
 
     public  Image Image;
+    public QuickOutline manOutline;
 
     private void Awake()
     {
@@ -48,6 +49,22 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadNewScene(levelIndex));
     }
 
+    public void FadeOut()
+    {
+        StartCoroutine(FadeOutCO());
+    }
+
+    private IEnumerator FadeOutCO()
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < 2f)
+        {
+            elapsedTime += Time.deltaTime;
+            Image.color = Color.Lerp(Color.clear, Color.black, elapsedTime / 2);
+            yield return new WaitForEndOfFrame();
+        }
+        Image.color = Color.black;
+    }
     public void CallChapter2Sequence()
     {
         StartCoroutine(Chapter2Sequence());
@@ -100,6 +117,29 @@ public class GameManager : MonoBehaviour
     public void Chapter4SetBack()
     {
         WickedNpc.StartSetBackAnim();
+    }
+
+    /*public void OfficePlayerTrigger()
+    {
+        DialogueSystem.instance.GetChapterText();
+        DialogueSystem.instance.isDialogueOpen = true;
+    }*/
+
+    public void OfficeSequence0()
+    {
+        Debug.Log("Highlight");
+        StartCoroutine(OutlineLerp());
+    }
+
+    private IEnumerator OutlineLerp()
+    {
+        var elapsedTime = 0f;
+        while (elapsedTime < 1)
+        {
+            elapsedTime += Time.deltaTime;
+            manOutline.OutlineWidth = Mathf.Lerp(0, 10, elapsedTime);
+            yield return new WaitForEndOfFrame();
+        }
     }
 
     private IEnumerator LoadNewScene(int levelIndex)
