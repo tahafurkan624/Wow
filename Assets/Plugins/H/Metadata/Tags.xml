@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MasterTagFolder" id="{d5e81e91-366c-47a6-aece-9b3480251075}">
+		<property name="name">
+			<value>Master</value>
+		</property>
+		<relationship name="items">
+			<destination>{0febcc40-be21-4172-a642-03103382adab}</destination>
+			<destination>{cc9bf330-7017-42f3-ab9d-cb88f44c4d4c}</destination>
+			<destination>{90ef13e7-5dac-49e6-b204-83ac0c2b6e43}</destination>
+			<destination>{0b57943b-7fd5-40e0-8817-42781d035d2a}</destination>
+			<destination>{69908030-e43f-48b5-8cb6-ace2ea824d19}</destination>
+			<destination>{63ae10a8-6293-4c77-af64-79c6b48bff58}</destination>
+			<destination>{6c501ac0-71f2-46cb-9a1c-f96f62f7cb46}</destination>
+			<destination>{01ca7308-73db-4115-82e6-a445dcbcb549}</destination>
+		</relationship>
+	</object>
+	<object class="Tag" id="{0febcc40-be21-4172-a642-03103382adab}">
+		<property name="name">
+			<value>ahdsr-modulator</value>
+		</property>
+	</object>
+	<object class="Tag" id="{cc9bf330-7017-42f3-ab9d-cb88f44c4d4c}">
+		<property name="name">
+			<value>async</value>
+		</property>
+	</object>
+	<object class="Tag" id="{90ef13e7-5dac-49e6-b204-83ac0c2b6e43}">
+		<property name="name">
+			<value>initial-value</value>
+		</property>
+	</object>
+	<object class="Tag" id="{0b57943b-7fd5-40e0-8817-42781d035d2a}">
+		<property name="name">
+			<value>loop-instrument</value>
+		</property>
+	</object>
+	<object class="Tag" id="{69908030-e43f-48b5-8cb6-ace2ea824d19}">
+		<property name="name">
+			<value>parameter</value>
+		</property>
+	</object>
+	<object class="Tag" id="{63ae10a8-6293-4c77-af64-79c6b48bff58}">
+		<property name="name">
+			<value>persistent</value>
+		</property>
+	</object>
+	<object class="Tag" id="{6c501ac0-71f2-46cb-9a1c-f96f62f7cb46}">
+		<property name="name">
+			<value>single-instrument</value>
+		</property>
+	</object>
+	<object class="Tag" id="{01ca7308-73db-4115-82e6-a445dcbcb549}">
+		<property name="name">
+			<value>snapshot-instrument</value>
+		</property>
+	</object>
+</objects>

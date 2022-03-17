@@ -184,7 +184,19 @@ MonoBehaviour:
         m_CallState: 2
   endEvent1:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 434171304}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: EndScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dialogueTmp: {fileID: 194602565}
   panelGo: {fileID: 921323028}
   _dialogueDatas:
@@ -480,7 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentChapter: 1
   _startMoveTrans: {fileID: 556498963}
-  Image: {fileID: 0}
+  Image: {fileID: 6153150002603900086}
 --- !u!4 &434171305
 Transform:
   m_ObjectHideFlags: 0
@@ -1188,6 +1200,22 @@ PrefabInstance:
     - target: {fileID: 7577809253319567035, guid: 3a9b07a25b6afb0488d51f126e63bfad, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967263
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801760755780969044, guid: 3a9b07a25b6afb0488d51f126e63bfad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.87351674
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801760755780969044, guid: 3a9b07a25b6afb0488d51f126e63bfad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801760755780969044, guid: 3a9b07a25b6afb0488d51f126e63bfad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.48679414
+      objectReference: {fileID: 0}
+    - target: {fileID: 7801760755780969044, guid: 3a9b07a25b6afb0488d51f126e63bfad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 58.26
       objectReference: {fileID: 0}
     - target: {fileID: 8042970570122209977, guid: 3a9b07a25b6afb0488d51f126e63bfad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6752,6 +6780,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25b9fb47093575245b3e14006d4f15bf, type: 3}
+--- !u!114 &6153150002603900086 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 885036925465214824, guid: 25b9fb47093575245b3e14006d4f15bf, type: 3}
+  m_PrefabInstance: {fileID: 6153150002603900085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &8792714276748861579
 ParticleSystem:
   m_ObjectHideFlags: 0

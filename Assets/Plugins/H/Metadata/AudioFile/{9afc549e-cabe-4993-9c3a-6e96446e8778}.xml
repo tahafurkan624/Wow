@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9afc549e-cabe-4993-9c3a-6e96446e8778}">
+		<property name="assetPath">
+			<value>mystic.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>6.0833560090702949</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{daa6a135-67b2-49f9-8552-b5fc1309ff20}</destination>
+		</relationship>
+	</object>
+</objects>

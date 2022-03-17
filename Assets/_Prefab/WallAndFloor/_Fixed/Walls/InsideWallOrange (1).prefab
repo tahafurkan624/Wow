@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3595957467254195724}
   - component: {fileID: 3724932871324517779}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: InsideWallOrange (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

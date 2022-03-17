@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Chapter_1_Dialogue_0_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - "Adam: Buyrun oturun l\xFCtfen"
-  - "Kad\u0131n: Te\u015Fekk\xFCr ederim"
-  - "Ana Karakter: Kad\u0131n olmak vard\u0131 ya..."
+  - Take a seat lady
+  - Thank you
+  - I would be suprised if he gave me a place. How nice it would be a woman

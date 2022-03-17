@@ -10,12 +10,8 @@ public class Player : MonoBehaviour
 
     [SerializeField] private Animator _animatorM, _animatorF;
 
-    public Animator AnimatorM
-    {
-        get => _animatorM;
-        set => _animatorM = value;
-    }
-
+    public Animator AnimatorM { get => _animatorM; set => _animatorM = value; }
+    public Animator AnimatorF { get => _animatorF; set => _animatorF = value; } 
     public NavMeshAgent Agent => _agent;
 
     private void Awake()
