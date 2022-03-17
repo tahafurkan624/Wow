@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c8330c8c35e48c46bb756e0c351b71e, type: 3}
-  m_Name: Chapter_3_Dialogue_0_Data
+  m_Name: Chapter_4_Dialogue_0_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - Take a seat madame
-  - Thanks
-  - Fianlly i can go work comfortably
+  - Selam
+  - "Buras\u0131 Chapter 2"
+  - Buraya kadar

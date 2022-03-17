@@ -37,8 +37,13 @@ public class PlayerTrigger : MonoBehaviour
                     StartCoroutine(WindowHitSequence());
                     break;
                 case 2:
+                    StartCoroutine(PlayerSitSequence(player));
                     break;
                 case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
                     break;
             }
         }
@@ -86,6 +91,25 @@ public class PlayerTrigger : MonoBehaviour
         _womanNPC.agent.enabled = false;
         _womanNPC.transform.DOMove(sitTrans.position, 1f).SetEase(Ease.OutQuad);
         _womanNPC.transform.DORotate(sitTrans.rotation.eulerAngles, .6f);
+    }
+
+    private IEnumerator PlayerSitSequence(Player player)
+    {
+        yield return new WaitForSeconds(1.9f);
+        DialogueSystem.instance.GetChapterText();
+        DialogueSystem.instance.isDialogueOpen = true;
+
+        _gentleman.StandUp();
+
+        yield return new WaitForSeconds(1.5f); 
+        player.Agent.SetDestination(sitTrans.position);
+
+        yield return new WaitForSeconds(1f);
+        player.AnimatorF.SetTrigger("Sit");
+        player.Agent.enabled = false;
+        player.AnimatorF.SetFloat("Speed", 1f);
+        player.transform.DOMove(sitTrans.position, 1f).SetEase(Ease.OutQuad);
+        player.transform.DORotate(sitTrans.rotation.eulerAngles, .6f);
     }
 
     IEnumerator EyeFadeIn(SpriteRenderer renderer)

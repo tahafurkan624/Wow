@@ -26,21 +26,26 @@ public class GameManager : MonoBehaviour
         {
             case Chapter.Chapter1:
                 _player.MoveToPoint(_startMoveTrans.position);
+
+                FMOD.Studio.EventInstance instanceGrass = FMODUnity.RuntimeManager.CreateInstance("event:/Atm/Bus");
+                instanceGrass.start();
                 break;
             case Chapter.Chapter2:
                 DialogueSystem.instance.GetChapterText();
                 DialogueSystem.instance.isDialogueOpen = true;
                 break;
             case Chapter.Chapter3:
+                WickedNpc = FindObjectOfType<WickedMan>();
+                _player.MoveToPoint(_startMoveTrans.position);
                 break;
             case Chapter.Chapter4:
                 break;
         }
     }
 
-    public void EndScene()
+    public void EndScene(int levelIndex)
     {
-        StartCoroutine(LoadNewScene());
+        StartCoroutine(LoadNewScene(levelIndex));
     }
 
     public void CallChapter2Sequence()
@@ -53,7 +58,51 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
     }
 
-    private IEnumerator LoadNewScene()
+    public void CallChapter4Sequence()
+    {
+        StartCoroutine(Chapter4Sequence());
+    }
+
+    public WickedMan WickedNpc;
+    private IEnumerator Chapter4Sequence()
+    {
+        yield return new WaitForSeconds(1f);
+        WickedNpc.StartTypingAnim();
+    }
+
+    public void Chapter4ButtonEvent()
+    {
+        StartCoroutine(Chapter4ButtonSequence());
+    }
+
+    public GameObject DecisionUI,DecisionUI2,DecisionUI3;
+
+    private IEnumerator Chapter4ButtonSequence()
+    {
+        yield return new WaitForSeconds(.5f);
+        DecisionUI.SetActive(true);
+    }
+
+    public void Chapter4AskKindly()
+    {
+        StartCoroutine(Chapter4AskKindlySequence());
+    }
+
+    private IEnumerator Chapter4AskKindlySequence()
+    {
+        DecisionUI.SetActive(false);
+        yield return new WaitForSeconds(.5f);
+
+        DialogueSystem.instance.GetChapterText();
+        DialogueSystem.instance.isDialogueOpen = true;
+    }
+
+    public void Chapter4SetBack()
+    {
+        WickedNpc.StartSetBackAnim();
+    }
+
+    private IEnumerator LoadNewScene(int levelIndex)
     {
         yield return new WaitForSeconds(1);
 
@@ -66,7 +115,7 @@ public class GameManager : MonoBehaviour
         }
         Image.color = Color.black;
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(levelIndex);
     }
 
     public enum Chapter

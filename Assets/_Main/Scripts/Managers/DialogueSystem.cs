@@ -11,7 +11,7 @@ public class DialogueSystem : MonoBehaviour
 
     public bool isDialogueOpen;
 
-    public UnityEvent endEvent, endEvent1;
+    public UnityEvent endEvent, endEvent1, endEvent2, endEvent3;
 
     private void Awake()
     {
@@ -61,8 +61,22 @@ public class DialogueSystem : MonoBehaviour
         {
             dialogueTmp.enabled = false;
             panelGo.SetActive(false);
-            if(dialogueIndex == 0) endEvent.Invoke();
-            else if(dialogueIndex == 1) endEvent1.Invoke();
+
+            switch (dialogueIndex)
+            { 
+                case 0:
+                    endEvent.Invoke();
+                    break;
+                case 1:
+                    endEvent1.Invoke();
+                    break;
+                case 2:
+                    endEvent2.Invoke();
+                    break;
+                case 3:
+                    endEvent3.Invoke();
+                    break;
+            }
 
             dialogueIndex++;
             quoteIndex = 0;
