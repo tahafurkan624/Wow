@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(Chapter4ButtonSequence());
     }
 
-    public GameObject DecisionUI,DecisionUI2,DecisionUI3;
+    public GameObject DecisionUI, DecisionUI2, DecisionUI3;
 
     private IEnumerator Chapter4ButtonSequence()
     {

@@ -42,11 +42,18 @@ public class PlayerTrigger : MonoBehaviour
                 case 3:
                     break;
                 case 4:
+                    StartCoroutine(MoneySequence());
                     break;
                 case 5:
                     break;
             }
         }
+    }
+
+    private IEnumerator MoneySequence()
+    {
+        yield return new WaitForSeconds(2f);
+        
     }
 
     private IEnumerator WindowHitSequence()

@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Chapter_4_Dialogue_0_Data
   m_EditorClassIdentifier: 
   dialogueText:
-  - Selam
-  - "Buras\u0131 Chapter 2"
-  - Buraya kadar
+  - It looks like my boos did not deposit all of my money
+  - I should talk to him
